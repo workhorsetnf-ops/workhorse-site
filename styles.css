@@ -357,6 +357,30 @@ section + section { border-top: 1px solid var(--rule); }
 }
 .footer a { color: var(--body); }
 
+/* ---------- Portrait ---------- */
+
+.portrait {
+  margin-top: clamp(32px, 4vw, 44px);
+  border-top: 6px solid var(--orange);
+  background: var(--raise);
+  padding: clamp(12px, 1.6vw, 18px);
+}
+
+.portrait img {
+  width: 100%;
+  /* Fixed ratio so any photo shape sits in the layout the same way. */
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 30%;   /* bias upward so heads don't get cropped */
+  border: 1px solid var(--rule);
+}
+
+.portrait figcaption {
+  margin: 14px 2px 2px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
 /* ---------- Blog listing ---------- */
 
 .post-list { border-top: 1px solid var(--rule); margin-top: 36px; }
