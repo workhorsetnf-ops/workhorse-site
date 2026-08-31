@@ -7,10 +7,27 @@ editor, push, and Vercel redeploys it.
 index.html      Home — VSL is the hero, plus the wrestler/fan split
 program.html    Main Event-Ready Physique
 about.html      Your background
+blog.html       Blog index — the list of posts
+blog-*.html     One file per post
 contact.html    Booking link + message form
 styles.css      All styling
 vercel.json     Gives you /about instead of /about.html
 ```
+
+## Adding a blog post
+
+Two steps, no CMS, no build.
+
+1. **Copy `blog-TEMPLATE.html`** and rename it `blog-your-topic.html`. Lowercase,
+   hyphens, no spaces — the filename becomes the URL. Fill in the title, date and
+   body. The template has numbered comments telling you what to change.
+2. **Add it to the list.** Open `blog.html`, copy one of the `<article class="post-row">`
+   blocks, and change the date, title, link and summary line.
+
+That's it. The post is live at `beaworkhorse.com/blog-your-topic`.
+
+If you'd rather just write the words and skip the HTML, send me the draft and I'll
+hand you back a finished file to drop in.
 
 ## Before it goes live — five things to replace
 
