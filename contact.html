@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Workhorse Training &amp; Nutrition</title>
+<meta name="description" content="Book a call or send a message about coaching with Workhorse Training & Nutrition.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="wordmark" href="index.html">WORK<span>HORSE</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="program.html">The program</a>
+      <a href="about.html">About Anthony</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="shell">
+      <p class="credit">Get in touch</p>
+      <h1>Book a call, or ask first</h1>
+      <p class="lede" style="margin-top:22px;">The call is free and it's a conversation, not a pitch. If we're not a fit I'll say so and point you somewhere better.</p>
+
+      <div class="marquee-foot" style="margin-top:30px;">
+        <!-- REPLACE # with your Calendly / Cal.com link -->
+        <a class="btn" href="#">Book a call</a>
+        <a class="btn btn-ghost" href="index.html">Watch the video first</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <h2>Or send a message</h2>
+      <p style="margin-top:18px;">Tell me where you're starting and what you're training for. I answer these myself, usually within a day or two.</p>
+
+      <!-- ===== FORM SETUP =====
+           This form needs somewhere to send to. The quickest option is Formspree:
+             1. Sign up at formspree.io and create a form
+             2. Replace the action URL below with the one they give you
+           Until then, the form will not deliver anything.
+           ====================== -->
+      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="who">Which are you?</label>
+          <select id="who" name="who">
+            <option>I work in professional wrestling</option>
+            <option>I'm a fan who wants to train like it</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Where are you starting, and what are you training for?</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send message</button>
+      </form>
+
+      <p style="margin-top:36px;" class="dim">
+        <!-- Replace with your real email address -->
+        Prefer email? <a href="mailto:you@beaworkhorse.com">you@beaworkhorse.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div>Workhorse Training &amp; Nutrition</div>
+    <div>
+      <a href="index.html">Home</a> &nbsp;
+      <a href="program.html">The program</a> &nbsp;
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
