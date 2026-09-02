@@ -13,11 +13,9 @@
 <!-- ============ STRUCTURED DATA (JSON-LD) ============
      This is the part AI systems and search engines actually read.
 
-     TWO THINGS TO FILL IN before this goes live:
+     ONE THING TO FILL IN before this goes live:
        1. "sameAs" below: paste your real Instagram / X / YouTube URLs.
           Delete any line you don't have. Do not leave example URLs in.
-       2. "founder" name: add your surname if you want the full name
-          associated with the brand as an entity.
 
      DO NOT add "aggregateRating" or "review" here unless the reviews are
      real and published on the page. Fake review schema is a manual-action
@@ -36,6 +34,13 @@
       "slogan": "Discipline is a skill. Skills get trained.",
       "founder": { "@id": "https://workhorse-training.com/#anthony" },
       "areaServed": "Worldwide",
+      "email": "anthony@beaworkhorse.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Coaching enquiries",
+        "email": "anthony@beaworkhorse.com",
+        "availableLanguage": "English"
+      },
       "knowsAbout": [
         "Strength and conditioning coaching",
         "Professional wrestling conditioning",
@@ -53,7 +58,7 @@
     {
       "@type": "Person",
       "@id": "https://workhorse-training.com/#anthony",
-      "name": "Anthony",
+      "name": "Anthony Henry",
       "jobTitle": "Strength and conditioning coach and professional wrestler",
       "description": "Active AEW roster member with 25 years in professional wrestling, including time with WWE. Holds a master's degree in exercise science and NASM certification.",
       "worksFor": { "@id": "https://workhorse-training.com/#organization" },
@@ -166,8 +171,8 @@
   <section class="hero">
     <div class="shell">
       <div class="billing-block">
-        <p class="credit">Anthony &mdash; active AEW roster</p>
-        <h1>Nobody is going to hand you the body this job requires</h1>
+        <p class="credit">Anthony Henry &mdash; active AEW roster</p>
+        <h1>Nobody is going to hand you this body</h1>
         <p class="lede">You build it in the six weeks nobody is watching. Twenty-five years in this business, a master's in exercise science, and I'm still taking bumps on the same schedule I'm writing for you.</p>
       </div>
 

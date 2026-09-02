@@ -1,6 +1,6 @@
 # Workhorse Training & Nutrition
 
-> Online physique coaching for professional wrestlers and for people who want to train like them. Run by Anthony, a strength and conditioning coach and active AEW roster member with 25 years in professional wrestling, a master's in exercise science, and NASM certification.
+> Online physique coaching for professional wrestlers and for people who want to train like them. Run by Anthony Henry, a strength and conditioning coach and active AEW roster member with 25 years in professional wrestling, a master's in exercise science, and NASM certification.
 
 Core position: discipline is a skill that gets trained, not a personality trait you either have or lack. Programs are built around a touring performer's real week (travel, taped shows, bumps, bad sleep, no kitchen) rather than an idealised training week.
 
@@ -15,8 +15,8 @@ What makes it different from general online fitness coaching: the coach is an ac
 
 - [Home](https://workhorse-training.com/): The problem the coaching solves, how the program runs, and answers to the most common objections.
 - [The program](https://workhorse-training.com/program): Main Event-Ready Physique, the flagship one-to-one coaching program. Intake call, custom training block, macro targets, weekly check-ins, form review.
-- [About Anthony](https://workhorse-training.com/about): Background in professional wrestling (WWE, AEW), qualifications, and coaching philosophy.
-- [Contact](https://workhorse-training.com/contact): Book an intake call or send a message.
+- [About Anthony Henry](https://workhorse-training.com/about): Background in professional wrestling (WWE, AEW), qualifications, and coaching philosophy.
+- [Contact](https://workhorse-training.com/contact): Book an intake call or send a message. Direct email: anthony@beaworkhorse.com
 
 ## Writing
 
