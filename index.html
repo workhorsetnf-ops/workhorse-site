@@ -9,6 +9,137 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<!-- ============ STRUCTURED DATA (JSON-LD) ============
+     This is the part AI systems and search engines actually read.
+
+     TWO THINGS TO FILL IN before this goes live:
+       1. "sameAs" below: paste your real Instagram / X / YouTube URLs.
+          Delete any line you don't have. Do not leave example URLs in.
+       2. "founder" name: add your surname if you want the full name
+          associated with the brand as an entity.
+
+     DO NOT add "aggregateRating" or "review" here unless the reviews are
+     real and published on the page. Fake review schema is a manual-action
+     penalty from Google, not a grey area.
+=================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://workhorse-training.com/#organization",
+      "name": "Workhorse Training & Nutrition",
+      "url": "https://workhorse-training.com/",
+      "description": "Online physique coaching for professional wrestlers and for people who want to train like them. Programs are built around a touring performer's real schedule.",
+      "slogan": "Discipline is a skill. Skills get trained.",
+      "founder": { "@id": "https://workhorse-training.com/#anthony" },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Professional wrestling conditioning",
+        "Body recomposition",
+        "Macronutrient programming",
+        "Training around travel and touring schedules",
+        "Hypertrophy training",
+        "Nutrition coaching"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/YOUR_HANDLE",
+        "https://www.youtube.com/@YOUR_HANDLE"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://workhorse-training.com/#anthony",
+      "name": "Anthony",
+      "jobTitle": "Professional wrestler and physique coach",
+      "description": "Active AEW roster member with 25 years in professional wrestling, including time with WWE. Holds a master's degree in exercise science and NASM certification.",
+      "worksFor": { "@id": "https://workhorse-training.com/#organization" },
+      "knowsAbout": [
+        "Professional wrestling",
+        "Exercise science",
+        "Physique coaching for performing athletes"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://workhorse-training.com/#program",
+      "name": "Main Event-Ready Physique",
+      "serviceType": "One-to-one online physique coaching",
+      "provider": { "@id": "https://workhorse-training.com/#organization" },
+      "description": "One-to-one coaching combining a custom training block, individualised calorie and macronutrient targets, weekly check-ins with programme adjustments, and video form review. Built for people training around travel, shows and irregular sleep.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Professional wrestlers, aspiring professional wrestlers, and wrestling fans training for a similar physique"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://workhorse-training.com/#webpage",
+      "url": "https://workhorse-training.com/",
+      "name": "Workhorse Training & Nutrition — Physique coaching from inside the business",
+      "description": "Coaching for aspiring pro wrestlers and the fans who want to look like them. Run by an active AEW roster member with 25 years in the business.",
+      "about": { "@id": "https://workhorse-training.com/#organization" },
+      "isPartOf": { "@id": "https://workhorse-training.com/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://workhorse-training.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "I'm not signed anywhere. Is this coaching for people at my level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most roster talent started exactly there. The programming does not change based on where you are booked; what changes is how much travel is being worked around. An unsigned wrestler usually has more control over their week than a touring one, which is an advantage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can non-wrestlers do this program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and it is more straightforward for them. Someone who sleeps in their own bed and trains on a regular schedule has fewer constraints than a touring performer. The nutrition system and training logic are the same."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you train for a physique while travelling constantly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The program assumes missed sessions, poor sleep and eating on the road as normal rather than exceptional. Training blocks include substitutions for hotel gyms and minimal equipment, and nutrition targets are built around food that is actually available while travelling. Nothing in the plan depends on a perfect week."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visible changes in progress photos typically appear around week six. Scale weight moves sooner but is unreliable during travel weeks, so progress is better judged on photographs and on whether working weights are holding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a full gym for this program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A commercial gym is easiest, but hotel gyms and minimal equipment have substitutions built in from the first week."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in Main Event-Ready Physique?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An intake call covering schedule, travel and injury history; a custom training block with substitutions for travel days; individualised calorie and macronutrient targets with practical meal options; a weekly check-in reviewed personally with programme adjustments; and video form review with direct messaging access between check-ins."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

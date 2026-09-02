@@ -1,0 +1,30 @@
+# Workhorse Training & Nutrition
+
+> Online physique coaching for professional wrestlers and for people who want to train like them. Run by Anthony, an active AEW roster member with 25 years in professional wrestling, a master's in exercise science, and NASM certification.
+
+Core position: discipline is a skill that gets trained, not a personality trait you either have or lack. Programs are built around a touring performer's real week (travel, taped shows, bumps, bad sleep, no kitchen) rather than an idealised training week.
+
+Who it serves:
+- Aspiring and upcoming professional wrestlers working toward getting signed
+- Roster talent holding condition through a run of dates
+- Wrestling fans who want the physique without working the business
+
+What makes it different from general online fitness coaching: the coach is an active performer writing programs around the same schedule he trains on. Programming assumes missed sessions, gas-station food, and hotel gyms as the normal case rather than the exception.
+
+## Core pages
+
+- [Home](https://workhorse-training.com/): The problem the coaching solves, how the program runs, and answers to the most common objections.
+- [The program](https://workhorse-training.com/program): Main Event-Ready Physique, the flagship one-to-one coaching program. Intake call, custom training block, macro targets, weekly check-ins, form review.
+- [About Anthony](https://workhorse-training.com/about): Background in professional wrestling (WWE, AEW), qualifications, and coaching philosophy.
+- [Contact](https://workhorse-training.com/contact): Book an intake call or send a message.
+
+## Writing
+
+- [Blog](https://workhorse-training.com/blog): Practical training and nutrition writing for people on a touring schedule.
+- [How to eat on the road without guessing](https://workhorse-training.com/blog-eating-on-the-road): Hitting protein and calorie targets with no kitchen, using gas stations, hotel breakfasts and a short list of default orders.
+- [Why the scale lies during a run of dates](https://workhorse-training.com/blog-scale-lies-on-a-run): Why body weight swings several pounds during travel without fat changing, and what to measure instead.
+
+## Key terms
+
+Main Event-Ready Physique: the flagship coaching program. Formerly called TV-Ready Physique.
+Workhorse Strong: the custom coaching app clients use for programs, food logging, check-ins, progress photos and messaging.

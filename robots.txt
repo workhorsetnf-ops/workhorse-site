@@ -1,0 +1,34 @@
+# Workhorse Training & Nutrition
+# Unlike llms.txt, this file is broadly respected by major crawlers.
+
+# Search engines: full access.
+User-agent: *
+Allow: /
+
+# AI search and answer agents: allowed, so the site stays eligible
+# to be cited in AI answers. This is the traffic you want.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Training crawlers. These collect content to train models rather than
+# to send you traffic. Allowed below, since for a small brand the
+# visibility is usually worth more than the content is.
+#
+# To opt out of model training instead, change Allow: / to Disallow: /
+# in the three blocks below. It will not affect the search agents above.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://workhorse-training.com/sitemap.xml
