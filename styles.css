@@ -7,13 +7,14 @@
 
 :root {
   --ink:        #000000;   /* page base */
-  --raise:      #0F0F0F;   /* only where a panel must lift off the page */
+  --surface:    #161616;   /* alternating section bands */
+  --raise:      #232323;   /* panels sitting on top of either */
   --paper:      #FFFFFF;
   --body:       #D9D4CE;   /* warm off-white, easier than pure white on black */
-  --muted:      #8C8781;
+  --muted:      #9A948D;
   --orange:     #FF6B00;
   --orange-lit: #FF8A2B;   /* hover / focus only */
-  --rule:       #262626;
+  --rule:       #333333;
 
   --measure:    64ch;
   --gutter:     clamp(20px, 5vw, 56px);
@@ -86,8 +87,20 @@ h1 + .lede, h2 + .lede { margin-top: 20px; }
   padding-right: var(--gutter);
 }
 
+/* Alternate the section backgrounds so neighbours separate by value.
+   Pure black next to a lifted near-black reads as two distinct bands
+   without introducing another colour. */
+main > section { background: var(--ink); }
+main > section:nth-of-type(even) { background: var(--surface); }
+
+/* The orange closer overrides the alternation regardless of position. */
+main > section.closer { background: var(--orange); }
+
 section { padding: clamp(56px, 9vw, 104px) 0; }
-section + section { border-top: 1px solid var(--rule); }
+
+/* With the bands doing the separating, the divider only needs to mark
+   the seam, so keep it faint and let the value change carry it. */
+main > section + section { border-top: 1px solid #1F1F1F; }
 
 /* ---------- Masthead ---------- */
 
@@ -156,6 +169,7 @@ section + section { border-top: 1px solid var(--rule); }
 
 /* The video is the hero, not an afterthought. */
 .marquee {
+  border: 1px solid var(--rule);
   border-top: 6px solid var(--orange);
   background: var(--raise);
   padding: clamp(14px, 2vw, 22px);
@@ -245,7 +259,7 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .door {
-  background: var(--ink);
+  background: var(--raise);
   padding: clamp(26px, 3.4vw, 40px);
   display: flex;
   flex-direction: column;
@@ -361,6 +375,7 @@ section + section { border-top: 1px solid var(--rule); }
 
 .portrait {
   margin-top: clamp(32px, 4vw, 44px);
+  border: 1px solid var(--rule);
   border-top: 6px solid var(--orange);
   background: var(--raise);
   padding: clamp(12px, 1.6vw, 18px);
