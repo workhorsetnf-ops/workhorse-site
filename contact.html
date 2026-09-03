@@ -46,21 +46,27 @@
       <h2>Or send a message</h2>
       <p style="margin-top:18px;">Tell me where you're starting and what you're training for. I answer these myself, usually within a day or two.</p>
 
-      <!-- ===== FORM SETUP =====
-           This form needs somewhere to send to. The quickest option is Formspree:
-             1. Sign up at formspree.io and create a form
-             2. Replace the action URL below with the one they give you
-           Until then, the form will not deliver anything.
-           ====================== -->
-      <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Handled entirely by /api/contact.js in this repo. No third-party
+           form service, no submission cap, no account to sign up for. -->
+      <!-- Shows the message from api/contact.js if a submission failed.
+           Plain HTML/CSS, so it works even with JavaScript off — the
+           browser just reads it straight from the URL the redirect sent. -->
+      <p id="form-error" class="form-error" hidden></p>
+
+      <form class="form" action="/api/contact" method="POST">
+
+        <!-- Spam honeypot. Bots fill every field they find; people can't see
+             this one, so anything that fills it gets discarded. -->
+        <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
         <div class="field">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" autocomplete="name" required>
         </div>
 
         <div class="field">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" autocomplete="email" required>
         </div>
 
         <div class="field">
@@ -98,6 +104,24 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Reads ?error=... left by api/contact.js on a failed submission and
+  // shows it above the form, then cleans the URL so a refresh doesn't
+  // keep showing a stale error.
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var msg = params.get('error');
+    if (!msg) return;
+    var box = document.getElementById('form-error');
+    box.textContent = msg;
+    box.hidden = false;
+    box.scrollIntoView({ block: 'center' });
+    params.delete('error');
+    var clean = window.location.pathname + (params.toString() ? '?' + params : '');
+    window.history.replaceState({}, '', clean);
+  })();
+</script>
 
 </body>
 </html>

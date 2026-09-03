@@ -355,6 +355,29 @@ main > section + section { border-top: 1px solid #1F1F1F; }
 .field textarea:focus { border-color: var(--orange); }
 .field textarea { min-height: 140px; resize: vertical; }
 
+/* ---------- Form error banner ---------- */
+
+.form-error {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid var(--orange);
+  border-left: 4px solid var(--orange);
+  background: var(--raise);
+  color: var(--paper);
+  font-size: 15px;
+}
+
+/* Honeypot: off-screen rather than display:none, because some bots skip
+   display:none fields. Invisible to people, still filled by scripts. */
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
