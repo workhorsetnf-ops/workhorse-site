@@ -12,11 +12,16 @@
  * The two addresses below are the only things you'd ever edit in this file.
  */
 
+// This inbox is where enquiries land. It can be on any domain — receiving
+// email never requires Resend's domain verification, only sending does.
 const TO_ADDRESS = 'anthony@beaworkhorse.com';
 
-// Must be on a domain you've verified in Resend. beaworkhorse.com is verified,
-// so this works. The mailbox itself doesn't need to exist.
-const FROM_ADDRESS = 'Workhorse Site <site@beaworkhorse.com>';
+// Must be on a domain verified in Resend. workhorse-training.com is what's
+// verified, and its DNS already lives in Vercel (same place the domain was
+// pointed at this project), so that's the easiest domain to verify from here.
+// The mailbox itself doesn't need to exist — only the domain needs the DNS
+// records Resend asks for.
+const FROM_ADDRESS = 'Workhorse Site <site@workhorse-training.com>';
 
 const MAX_MESSAGE = 5000;
 
