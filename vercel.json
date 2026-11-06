@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/program", "destination": "/#how", "permanent": true },
+    { "source": "/about", "destination": "/#story", "permanent": true }
+  ]
 }

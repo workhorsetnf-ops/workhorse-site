@@ -4,14 +4,16 @@ Plain HTML and CSS. No build step, no dependencies. Edit any file in a text
 editor, push, and Vercel redeploys it.
 
 ```
-index.html      Home — VSL is the hero, plus the wrestler/fan split
-program.html    Main Event-Ready Physique
-about.html      Your background
+index.html      Home: problem, solution, video, book a call, results,
+                story, who I am, testimonials, how it works (one page)
 blog.html       Blog index — the list of posts
 blog-*.html     One file per post
 contact.html    Booking link + message form
+thanks.html     Shown after the contact form sends
+images/         Photos used on the home page
 styles.css      All styling
-vercel.json     Gives you /about instead of /about.html
+vercel.json     Clean URLs; /program and /about redirect to the home page
+api/contact.js  Sends the contact form to your inbox (needs RESEND_API_KEY)
 ```
 
 ## Adding a blog post
@@ -24,26 +26,23 @@ Two steps, no CMS, no build.
 2. **Add it to the list.** Open `blog.html`, copy one of the `<article class="post-row">`
    blocks, and change the date, title, link and summary line.
 
-That's it. The post is live at `beaworkhorse.com/blog-your-topic`.
+That's it. The post is live at `workhorse-training.com/blog-your-topic`.
 
 If you'd rather just write the words and skip the HTML, send me the draft and I'll
 hand you back a finished file to drop in.
 
-## Before it goes live — five things to replace
+## Adding the VSL (the one thing still to do)
 
-1. **The VSL embed.** `index.html`, inside `<div class="frame">`. Paste the
-   iframe from YouTube/Vimeo and delete the `<div class="frame-empty">` under it.
-2. **Your booking link.** Every `href="#"` on a "Book a call" button, across all
-   four pages. Search for `REPLACE #`.
-3. **The contact form.** `contact.html` — sign up at formspree.io, create a form,
-   paste their URL into the form's `action`. Until then the form sends nowhere.
-4. **Your email address.** Bottom of `contact.html`.
-5. **Photos.** Commented-out `<img>` spots are marked in `about.html` (a photo of
-   you) and `program.html` (an app screenshot). Make an `images/` folder and drop
-   files in.
+In `index.html`, find the `VSL VIDEO` comment in section 3. Delete the
+`START HIDDEN` and `END HIDDEN` lines, then paste your YouTube/Vimeo/Loom embed
+`<iframe>` where it says `PASTE HERE`. The video then shows between the
+solution and the "Book your free Game Plan Call" block.
 
-Optional: your surname in the credit line at the top of `index.html`, and pricing
-on `program.html` if you'd rather not keep it on the call.
+## Booking link
+
+Every "Book a call" button points to
+`https://calendly.com/anthony-workhorse-training/30min`. If that ever changes,
+search all files for `calendly.com` and replace it.
 
 ## Deploying
 
@@ -61,5 +60,5 @@ Domains settings, so the site and the app share the domain without colliding.
 ## Editing later
 
 Changing text: open the `.html` file, edit between the tags, push.
-Changing colours: the top of `styles.css` — `--orange` is `#BF5700` and every
+Changing colours: the top of `styles.css` — `--orange` is `#FF8C00` and every
 orange element reads from it, so one edit changes the whole site.

@@ -14,7 +14,7 @@
 
 // This inbox is where enquiries land. It can be on any domain — receiving
 // email never requires Resend's domain verification, only sending does.
-const TO_ADDRESS = 'anthony@beaworkhorse.com';
+const TO_ADDRESS = 'anthony@workhorse-training.com';
 
 // Must be on a domain verified in Resend. workhorse-training.com is what's
 // verified, and its DNS already lives in Vercel (same place the domain was
@@ -124,7 +124,7 @@ module.exports = async (req, res) => {
 
   if (!process.env.RESEND_API_KEY) {
     console.error('RESEND_API_KEY is not set on this deployment.');
-    res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@beaworkhorse.com directly.') });
+    res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@workhorse-training.com directly.') });
     return res.end();
   }
 
@@ -150,12 +150,12 @@ module.exports = async (req, res) => {
     if (!r.ok) {
       const detail = await r.text();
       console.error('Resend rejected the send:', r.status, detail);
-      res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@beaworkhorse.com directly.') });
+      res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@workhorse-training.com directly.') });
       return res.end();
     }
   } catch (err) {
     console.error('Could not reach Resend:', err);
-    res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@beaworkhorse.com directly.') });
+    res.writeHead(303, { Location: '/contact?error=' + encodeURIComponent('Something went wrong sending that. Please email anthony@workhorse-training.com directly.') });
     return res.end();
   }
 
