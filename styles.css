@@ -746,3 +746,26 @@ main > section:nth-of-type(odd) .tile { background: var(--surface); }
 .final { text-align: center; }
 .final h2 { font-size: clamp(44px, 7vw, 84px); margin-bottom: 0; }
 .final p { margin: 18px auto 32px; color: #D4D4D4; font-size: 19px; }
+
+/* Problem + solution, one block under the hero (Nov 9 2026 feedback) */
+.pitch {
+  margin-top: clamp(48px, 7vw, 80px);
+  background: var(--surface);
+  border: 1px solid #2A2A2A;
+  border-radius: 6px;
+  padding: clamp(28px, 5vw, 56px);
+}
+.pitch h2 { font-size: clamp(36px, 5vw, 60px); margin-bottom: 28px; }
+.pitch .pains { list-style: none; margin: 0; padding: 0; }
+.pitch .pains li {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #D4D4D4;
+  padding: 18px 0;
+  border-top: 1px solid #2A2A2A;
+}
+.pitch .pains li:last-child { border-bottom: 1px solid #2A2A2A; }
+.pitch .pains strong { color: var(--paper); font-weight: 800; }
+.pitch .pitch-turn { margin-top: 48px; margin-bottom: 18px; color: var(--orange); }
+.pitch p { font-size: 19px; line-height: 1.65; color: #D4D4D4; margin: 0; max-width: 760px; }
+.book { padding-top: 0; }
