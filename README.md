@@ -60,5 +60,5 @@ Domains settings, so the site and the app share the domain without colliding.
 ## Editing later
 
 Changing text: open the `.html` file, edit between the tags, push.
-Changing colours: the top of `styles.css` — `--orange` is `#FF8C00` and every
+Changing colours: the top of `styles.css` — `--orange` is `#FF5500` and every
 orange element reads from it, so one edit changes the whole site.

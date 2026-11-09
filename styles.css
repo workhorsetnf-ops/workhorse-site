@@ -12,8 +12,8 @@
   --paper:      #FFFFFF;
   --body:       #D9D4CE;   /* warm off-white, easier than pure white on black */
   --muted:      #9A948D;
-  --orange:     #FF8C00;
-  --orange-lit: #FFA733;   /* hover / focus only */
+  --orange:     #FF5500;   /* matches the carousel graphics */
+  --orange-lit: #FF7A33;   /* hover / focus only */
   --rule:       #333333;
 
   --measure:    64ch;
