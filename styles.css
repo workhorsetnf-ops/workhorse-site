@@ -670,7 +670,7 @@ main > section:nth-of-type(odd) .tile { background: var(--surface); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
-  align-items: start;
+  align-items: stretch;    /* cards in a row end at the same height */
 }
 .result {
   margin: 0;
@@ -679,7 +679,14 @@ main > section:nth-of-type(odd) .tile { background: var(--surface); }
   border-radius: 6px;
   overflow: hidden;
 }
-.result img { width: 100%; height: auto; }
+.result img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;      /* every card the same size */
+  object-fit: contain;      /* show the whole graphic, never crop it */
+  background: #0B0B0B;
+}
 .result figcaption { padding: 20px; }
 .result .lost {
   font-family: "Bebas Neue", Impact, sans-serif;
