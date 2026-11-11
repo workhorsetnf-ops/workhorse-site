@@ -769,3 +769,4 @@ main > section:nth-of-type(odd) .tile { background: var(--surface); }
 .pitch .pitch-turn { margin-top: 48px; margin-bottom: 18px; color: var(--orange); }
 .pitch p { font-size: 19px; line-height: 1.65; color: #D4D4D4; margin: 0; max-width: 760px; }
 .book { padding-top: 0; }
+.vsl + .book { padding-top: 56px; }

@@ -11,6 +11,7 @@ blog-*.html     One file per post
 contact.html    Booking link + message form
 thanks.html     Shown after the contact form sends
 images/         Photos used on the home page
+media/          The VSL video (vsl.mp4) and its poster still
 styles.css      All styling
 vercel.json     Clean URLs; /program and /about redirect to the home page
 api/contact.js  Sends the contact form to your inbox (needs RESEND_API_KEY)
@@ -31,12 +32,13 @@ That's it. The post is live at `workhorse-training.com/blog-your-topic`.
 If you'd rather just write the words and skip the HTML, send me the draft and I'll
 hand you back a finished file to drop in.
 
-## Adding the VSL (the one thing still to do)
+## The VSL
 
-In `index.html`, find the `VSL VIDEO` comment in section 3. Delete the
-`START HIDDEN` and `END HIDDEN` lines, then paste your YouTube/Vimeo/Loom embed
-`<iframe>` where it says `PASTE HERE`. The video then shows between the
-solution and the "Book your free Game Plan Call" block.
+The video lives in `media/vsl.mp4` (poster still: `media/vsl-poster.jpg`) and
+plays between the solution and the "Book your free Game Plan Call" block. To
+swap it, upload a new file with the same name. Keep it under ~50 MB (GitHub
+rejects files over 100 MB); a 1080p H.264 MP4 at ~1.2 Mbps does that for a
+4–5 minute video.
 
 ## Booking link
 

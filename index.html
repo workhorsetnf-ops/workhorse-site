@@ -135,17 +135,18 @@
     <div class="shell">
 
       <!-- ===== VSL VIDEO =====
-           Hidden until the video is ready. To turn it on:
-           1. Delete the line that says START HIDDEN and the line that says END HIDDEN.
-           2. Paste your YouTube/Vimeo/Loom embed <iframe> where it says PASTE HERE.
-      START HIDDEN
+           To swap the video, replace media/vsl.mp4 (and media/vsl-poster.jpg for the still
+           shown before play). Keep the file under ~50 MB so GitHub accepts it. -->
       <p class="vsl-label">Watch this first</p>
       <div class="vsl">
         <div class="frame">
-          PASTE HERE
+          <video controls playsinline preload="metadata" poster="media/vsl-poster.jpg"
+                 aria-label="Anthony Henry explains the Main Event Physique system">
+            <source src="media/vsl.mp4" type="video/mp4">
+            Your browser can't play this video. <a href="media/vsl.mp4">Download it here</a>.
+          </video>
         </div>
       </div>
-      END HIDDEN -->
 
       <div class="book" id="book">
         <h2>Book your free Game Plan Call</h2>
