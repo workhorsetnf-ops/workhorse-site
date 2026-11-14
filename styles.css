@@ -777,3 +777,69 @@ main > section:nth-of-type(odd) .tile { background: var(--surface); }
 .pitch p { font-size: 19px; line-height: 1.65; color: #D4D4D4; margin: 0; max-width: 760px; }
 .book { padding-top: 0; }
 .vsl + .book { padding-top: 56px; }
+
+/* ==========================================================
+   Workhorse:Uprising launch pages (/uprising, /uprising/join,
+   /uprising/thanks). Nov 2026.
+   ========================================================== */
+
+.up-hero h1 { max-width: 14ch; }
+.up-hero .lede { margin-top: 24px; }
+.up-date {
+  display: inline-block;
+  margin-top: 26px;
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  color: #000;
+  background: var(--orange);
+  padding: 8px 14px 5px;
+  border-radius: 3px;
+}
+.up-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+.up-card {
+  border: 1px solid #2A2A2A;
+  border-top: 4px solid var(--orange);
+  border-radius: 6px;
+  padding: 26px 26px 24px;
+  background: var(--ink);
+}
+main > section:nth-of-type(odd) .up-card { background: var(--surface); }
+.up-card.main { grid-column: 1 / -1; }
+.up-card h3 { margin-bottom: 12px; }
+.up-card p { font-size: 16px; }
+.up-card .tag {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--orange); margin: 0 0 10px;
+}
+.up-form { max-width: 520px; margin-top: 30px; }
+.up-form .row { display: flex; gap: 14px; flex-wrap: wrap; }
+.up-form .row .field { flex: 1 1 200px; }
+.up-form .btn-solid { border: 0; cursor: pointer; width: 100%; margin-top: 4px; }
+.up-form .btn-solid[disabled] { opacity: 0.6; cursor: wait; }
+.up-small { font-size: 14px; color: var(--muted); margin-top: 14px; }
+.closer .up-small { color: rgba(0,0,0,0.7); }
+.closer .field label { color: #000; }
+.closer .field input { background: #fff; color: #000; border-color: #000; }
+.closer .btn-solid { background: #000; color: #fff; }
+.closer .btn-solid:hover { background: #222; color: #fff; }
+.price-box {
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 560px;
+  margin-top: 30px;
+}
+.price-box .amt {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 72px; line-height: 1; color: var(--paper);
+}
+.price-box .amt small { font-size: 28px; color: var(--muted); }
+.price-box ul { padding-left: 1.1em; margin: 18px 0 24px; }
+.price-box li { margin-bottom: 8px; }
+.price-box li::marker { color: var(--orange); }
