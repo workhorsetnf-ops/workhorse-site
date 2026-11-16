@@ -64,3 +64,22 @@ Domains settings, so the site and the app share the domain without colliding.
 Changing text: open the `.html` file, edit between the tags, push.
 Changing colours: the top of `styles.css` — `--orange` is `#FF5500` and every
 orange element reads from it, so one edit changes the whole site.
+
+## Workhorse:Uprising launch (Nov 2026)
+
+```
+uprising.html             /uprising: priority list until Fri 27 Nov 9am ET,
+                          "opens Sunday" Fri-Sun, then forwards to /uprising/join
+uprising/join.html        /uprising/join: sales page. Buy buttons go live
+                          Fri 27 Nov 9am ET and point to the app's /start checkout
+uprising/thanks.html      after someone joins the priority list
+api/uprising-signup.js    puts signups into Kit (tag + welcome email) and emails
+                          you a copy. Needs KIT_API_KEY in Vercel
+downloads/training-week-planner.pdf   the free planner from Email 2
+```
+
+Preview any phase: `/uprising?phase=priority`, `/uprising/join?open=1`.
+
+Videos for the sales page: upload `media/uprising-training.mp4`,
+`media/uprising-walkthrough.mp4` and `media/uprising-road-warrior.mp4`.
+Until each one exists, its slot shows "Video coming soon".
