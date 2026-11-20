@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workhorse:Uprising | Training for Rising Pro Wrestlers</title>
+<meta name="description" content="Workhorse:Uprising from Anthony Henry (AEW): training and nutrition for rising pro wrestlers who want to look the part and perform when the bell rings. Opens Black Friday, 27 November.">
+<meta property="og:title" content="Your physique is the first promo you cut.">
+<meta property="og:description" content="Workhorse:Uprising opens Black Friday. Join the priority list for first access.">
+<meta property="og:image" content="https://workhorse-training.com/images/hero-anthony.jpg">
+<meta property="og:url" content="https://workhorse-training.com/uprising">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+  // Launch timing (Eastern Time). Before Fri 27 Nov 9am ET: priority list.
+  // Fri 9am to Sun 29 Nov 9am ET: priority list is buying, everyone else waits for Sunday.
+  // From Sun 9am ET: this page sends people straight to the sales page.
+  // Preview any phase with ?phase=pre or ?phase=priority
+  (function () {
+    var now = Date.now();
+    var PRIORITY_OPEN = Date.parse('2026-11-27T14:00:00Z'); // Fri 9:00am ET
+    var PUBLIC_OPEN = Date.parse('2026-11-29T14:00:00Z');   // Sun 9:00am ET
+    var forced = (location.search.match(/phase=(pre|priority)/) || [])[1];
+    if (!forced && now >= PUBLIC_OPEN) { location.replace('/uprising/join'); return; }
+    var phase = forced || (now >= PRIORITY_OPEN ? 'priority' : 'pre');
+    document.documentElement.setAttribute('data-now', phase);
+  })();
+</script>
+<style>
+  html[data-now="pre"] [data-phase]:not([data-phase~="pre"]) { display: none; }
+  html[data-now="priority"] [data-phase]:not([data-phase~="priority"]) { display: none; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="wordmark" href="/">WORKHORSE TRAINING &amp; NUTRITION</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+      <a class="nav-cta" href="#join">Get first access</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero up-hero">
+    <div class="shell hero-split">
+      <div class="words">
+        <p class="eyebrow">Workhorse:Uprising</p>
+        <h1>Your physique is the first promo you cut.</h1>
+        <p class="lede">Build your look and your performance in the ring. Training splits for rising pro wrestlers, with a new split every six weeks.</p>
+        <span class="up-date" data-phase="pre">Opens Black Friday &middot; 27 November</span>
+        <span class="up-date" data-phase="priority">Open to everyone Sunday 29 Nov &middot; 9am ET</span>
+        <p data-phase="priority" style="margin-top:22px;">On the priority list? Your joining link is in your email. Everyone else: drop your email below and I'll send you the link when it opens on Sunday.</p>
+        <p style="margin-top:28px;"><a class="btn-solid" href="#join">Get first access</a></p>
+      </div>
+      <figure class="photo">
+        <img src="/images/hero-anthony.jpg" alt="Anthony Henry walking to the ring" width="1400" height="934" style="object-position: 48% center;">
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <h2>People see your look before they see what you can do</h2>
+      <p class="lede">Before you lock up, before your first move, people have already watched you make your entrance. Then the bell rings and you need the strength, speed, agility and gas tank to deliver the match.</p>
+      <p>Workhorse:Uprising is built for both: how you look walking through the curtain, and how you move once the match gets going.</p>
+
+      <div class="up-grid">
+        <div class="up-card main">
+          <p class="tag">The main programme</p>
+          <h3>Training splits built for pro wrestlers, a new one every six weeks</h3>
+          <p>Every training day covers plyos, power, strength, hypertrophy and conditioning, so you work on your physique, strength, speed, agility and gas tank together. Pick your track, set the days you can train, and log every set in the Workhorse Strong app.</p>
+        </div>
+        <div class="up-card">
+          <p class="tag">Nutrition</p>
+          <h3>Nutrition templates</h3>
+          <p>A guide and a starter meal plan scaled to your starting targets, built to work around a job, training, travel and shows.</p>
+        </div>
+        <div class="up-card">
+          <p class="tag">Extra help on the road</p>
+          <h3>Road Warrior Protocol</h3>
+          <p>Hotel gym missing what you need? Swaps for the exercises in your normal programme, so you still get a useful session in.</p>
+        </div>
+        <div class="up-card">
+          <p class="tag">Stay on track</p>
+          <h3>Accountability</h3>
+          <p>A quick daily check-in and your training logs, so it's easy to see when you're drifting and get back to the plan.</p>
+        </div>
+        <div class="up-card">
+          <p class="tag">Community</p>
+          <h3>The members' community</h3>
+          <p>A community and group chat inside the app, with other wrestlers working the same plan alongside you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shell">
+      <h2>What I wish I'd had coming up</h2>
+      <p>When I was coming up, nobody handed you this. You learned through trial and error, and if you were lucky a veteran gave you something useful to take away. I got signed at 37. That was my path. It doesn't have to be the age you use to judge yours.</p>
+      <p>I've spent 25 years in this business, including WWE and now AEW, and I hold a master's in exercise science. Workhorse:Uprising is the training and nutrition I'd have wanted earlier.</p>
+      <p class="dim">Anthony Henry</p>
+    </div>
+  </section>
+
+  <section class="closer" id="join">
+    <div class="shell">
+      <h2 data-phase="pre">Get first access on Black Friday</h2>
+      <h2 data-phase="priority">Get the link when it opens Sunday</h2>
+      <p data-phase="pre">Join the priority list for the full details, the price and first access on Friday 27 November at 9am ET. Public access follows on Sunday 29 November.</p>
+      <p data-phase="priority">Workhorse:Uprising opens to everyone on Sunday 29 November at 9am ET. Add your email and I'll send you the joining link then.</p>
+
+      <form class="up-form" id="up-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="first_name">First name</label>
+            <input id="first_name" name="first_name" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="hidden-field" aria-hidden="true">
+          <label for="_gotcha">Leave this empty</label>
+          <input id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="form-error" id="up-error" role="alert" hidden></p>
+        <button class="btn-solid" type="submit">Get first access</button>
+        <p class="up-small">You'll get my Workhorse:Uprising launch emails. Unsubscribe any time with one click.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div>Workhorse Training &amp; Nutrition</div>
+    <div>
+      <a href="/">Home</a> &nbsp;
+      <a href="/blog">Blog</a> &nbsp;
+      <a href="/contact">Contact</a> &nbsp; <a href="/terms">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('up-form');
+    var err = document.getElementById('up-error');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      err.hidden = true;
+      var data = Object.fromEntries(new FormData(form));
+      if (!data.first_name.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
+        err.textContent = 'Add your first name and a valid email.'; err.hidden = false; return;
+      }
+      var btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Saving your spot...';
+      fetch('/api/uprising-signup', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.error || 'Something went wrong.'); }); })
+        .then(function () { location.href = '/uprising/thanks'; })
+        .catch(function (x) {
+          err.textContent = x.message + ' If it keeps happening, email anthony@workhorse-training.com.';
+          err.hidden = false; btn.disabled = false; btn.textContent = 'Get first access';
+        });
+    });
+  })();
+</script>
+</body>
+</html>
